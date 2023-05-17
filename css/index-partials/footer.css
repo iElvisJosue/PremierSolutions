@@ -1,0 +1,22 @@
+.Footer {
+  width: 100%;
+  height: 150px;
+  background: var(--Black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--Padding);
+}
+.Footer-Networks {
+  display: flex;
+  gap: 5rem;
+}
+.Footer-Icons {
+  color: var(--Gray);
+  font-size: calc(var(--Icons) - 1rem);
+  cursor: pointer;
+}
+.Footer-Copyright {
+  font-size: var(--Text);
+  color: var(--Gray);
+}

@@ -1,0 +1,173 @@
+@media (min-width: 1450px) {
+  .AboutUs,
+  .Services,
+  .Team,
+  .Mail,
+  .Footer {
+    width: 1150px;
+    margin: 0 auto;
+  }
+  .Welcome {
+    text-align: center;
+  }
+}
+@media (max-width: 1200px) {
+  .Footer {
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+@media (max-width: 992px) {
+  .Team-Tittle {
+    height: 1.5rem;
+  }
+  .Team-Picture{
+    height: 20rem;
+  }
+  .Member-Picture{
+    width: 70%;
+    height: 85%;
+  }
+  .Team-Rol{
+    text-align: center;
+  }
+  .Team-Networks{
+    justify-content: space-between;
+  }
+  .Icon-Network{
+    font-size: calc(var(--Icons) - 1rem);
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    --Tittle: 5rem;
+    --SubTittle: 4rem;
+  }
+  .Mail{
+    grid-template-areas:
+      "Mail-Intro Mail-Intro"
+      "Mail-Form Mail-Form";
+  }
+  /* .Services {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "Services-Presentation Services-Presentation"
+      "Services-Construction Services-Construction"
+      "Services-1 Services-2"
+      "Services-3 Services-4"
+      "Services-Industry Services-Industry"
+      "Services-5 Services-6"
+      "Services-7 Services-8"
+      "Services-9 Services-10"
+      "Services-11 Services-11";
+  } */
+  .Services-List-Name{
+    font-size: calc(var(--Border) - .2rem);
+  }
+  .Services-Icons{
+    font-size: calc(var(--Icons) * 2) !important;
+  }
+  /* .Services-List{
+    height: 15rem;
+  } */
+}
+@media (max-width: 600px) {
+  :root {
+    --Tittle: 4.5rem;
+    --SubTittle: 3.5rem;
+    --Description: 2rem;
+    --Text: 1.3rem;
+  }
+  .Option-Work,
+  .Option-Wip,
+  .Option-About,
+  .Option-Contact {
+    display: none;
+  }
+  .Option-Show-Navbar {
+    transform: scale(1);
+  }
+  .Team {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "Team-Tittle"
+      "Member-1"
+      "Member-2"
+      "Member-3";
+    padding: 4rem 1.5rem;
+    gap: 1rem;
+  }
+  .Team-Member{
+    grid-template-areas:"Team-Picture Team-Picture"
+    "Team-Rol Team-Networks";
+  }
+  .Team-Picture{
+    height: 30rem;
+  }
+  .Member-Picture{
+    width: 70%;
+    height: 85%;
+  }
+  .Team-Rol{
+    text-align: left;
+  }
+  .Team-Networks{
+    justify-content: space-evenly;
+  }
+  .Icon-Network{
+    font-size: calc(var(--Icons) - 1rem);
+  }
+}
+
+@media (max-width: 475px) {
+  .Contact-Email {
+    font-size: calc(var(--Description) + 0.2rem);
+  }
+  .Mail-Form{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+    "Mail-Name"
+    "Mail-LastName"
+    "Mail-Email"
+    "Mail-Phone"
+    "Mail-Comment"
+    "Mail-Send";
+  }
+}
+@media (max-width: 420px) {
+  :root {
+    --Tittle: 4rem;
+    --SubTittle: 3rem;
+  }
+  .Services-List-Name{
+    font-size: calc(var(--Border) - .6rem);
+  }
+  .Mail-Title{
+    font-size: var(--Tittle);
+  }
+}
+@media (max-width: 375px) {
+  :root {
+    --Tittle: 3.5rem;
+    --SubTittle: 2.5rem;
+    --Description: 1.5rem;
+    --Text: 1.1rem;
+  }
+}
+@media (max-width: 320px) {
+  :root {
+    --Tittle: 3.2rem;
+    --SubTittle: 2.2rem;
+    --Description: 1.5rem;
+    --Text: 1.1rem;
+  }
+  .Footer-Networks {
+    gap: 3rem;
+  }
+}
+@media (max-width: 280px) {
+  .Contact-Email {
+    font-size: var(--Description);
+  }
+}

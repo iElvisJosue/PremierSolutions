@@ -1,0 +1,90 @@
+.Navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 65px;
+  border-bottom: 1px solid #252626;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: var(--Padding);
+  background: none;
+  transition: 0.5s ease all;
+  z-index: 999;
+}
+.Navbar-Dark {
+  background: var(--Black);
+}
+.Icon-Home {
+  cursor: pointer;
+  width: 5rem;
+}
+.Navbar-Options {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 7rem;
+}
+.Option-Work,
+.Option-Wip,
+.Option-About,
+.Option-Contact {
+  position: relative;
+  font-size: var(--Text);
+}
+.Option-Show-Navbar {
+  position: absolute;
+  top: calc(50% - 1.5rem);
+  right: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: scale(0);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.Bar-One,
+.Bar-Two,
+.Bar-Three {
+  position: relative;
+  width: 70%;
+  height: 2px;
+  background: var(--White);
+}
+.Option-Work::after,
+.Option-Wip::after,
+.Option-About::after,
+.Option-Contact::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  width: 0;
+  height: 1px;
+  background: var(--Orange);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.Option-Work:hover.Option-Work::after,
+.Option-Wip:hover.Option-Wip::after,
+.Option-About:hover.Option-About::after,
+.Option-Contact:hover.Option-Contact::after {
+  width: 120%;
+}

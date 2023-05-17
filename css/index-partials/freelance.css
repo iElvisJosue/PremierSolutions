@@ -1,0 +1,47 @@
+.Freelance {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+  padding: var(--Padding);
+}
+.Freelance-Tittle {
+  font-size: var(--Tittle);
+  color: var(--White);
+  background: linear-gradient(
+    271deg,
+    var(--Orange) 30%,
+    var(--White) 50%,
+    var(--Orange) 70%,
+    var(--White) 94%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Freelance-Message {
+  font-size: var(--Description);
+}
+.Freelance-Contact {
+  position: relative;
+  font-size: var(--Description);
+  font-weight: normal;
+  cursor: pointer;
+  color: var(--Orange);
+}
+.Freelance-Contact::after {
+  content: "";
+  position: absolute;
+  top: calc(50% + 0.5px);
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--White);
+  transition: 0.5s;
+}
+.Freelance-Contact:hover.Freelance-Contact::after {
+  width: 100%;
+}
