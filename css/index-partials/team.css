@@ -1,0 +1,95 @@
+.Team-Main {
+    width: 100%;
+    height: auto;
+    background: var(--Orange);
+}
+.Team {
+    position: relative;
+    width: 100%;
+    height: 50rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "Team-Tittle Team-Tittle Team-Tittle"
+        "Member-1 Member-2 Member-3";
+    padding: 4rem 1.5rem;
+    gap: 1rem;
+}
+.Team-Tittle {
+    grid-area: Team-Tittle;
+    height: 2.5rem;
+    font-size: var(--Text);
+    color: var(--Black);
+    letter-spacing: var(--Spacing);
+    font-weight: bold;
+}
+.Team-Member{
+    height: 47.5rem auto;
+    background: var(--White);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:"Team-Picture Team-Picture"
+    "Team-Rol Team-Networks";
+    padding: 3rem 1.5rem;
+    gap: 1rem;
+}
+.Member-1{
+    grid-area: Member-1;
+} 
+.Member-2{
+    grid-area: Member-2;
+}
+.Member-3{
+    grid-area: Member-3;
+}
+.Team-Picture{
+    grid-area: Team-Picture;
+    width: 100%;
+    height: 35.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Member-Picture{
+    width: 65%;
+    height: 65%;
+    border-radius: 50%;
+}
+.Team-Rol{
+    grid-area: Team-Rol;
+    height: auto;
+    color: var(--Orange);
+}
+.Member-Name{
+    font-size: calc(var(--Text) + .7rem);
+    padding-bottom: 1rem;
+    color: var(--Orange);
+}
+.Member-Rol{
+    color: var(--Orange);
+    font-size: var(--Text);
+}
+.Team-Networks{
+    grid-area: Team-Networks;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: .2rem
+}
+.Icon-Network{
+    font-size: calc(var(--Icons) - .5rem);
+    padding: 1rem;
+    border-radius: 50%;
+}
+.Member-Phone{
+    background: var(--Orange);
+}
+.Member-At{
+    background: var(--Orange);
+}
+.Member-Linkedin{
+    background: var(--Orange);
+}
+.Member-Instagram{
+    background: var(--Orange);
+}

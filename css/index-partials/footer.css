@@ -1,7 +1,7 @@
 .Footer {
   width: 100%;
   height: 150px;
-  background: var(--Black);
+  background: var(--White);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,11 +12,11 @@
   gap: 5rem;
 }
 .Footer-Icons {
-  color: var(--Gray);
+  color: var(--Orange);
   font-size: calc(var(--Icons) - 1rem);
   cursor: pointer;
 }
 .Footer-Copyright {
   font-size: var(--Text);
-  color: var(--Gray);
+  color: var(--Orange);
 }

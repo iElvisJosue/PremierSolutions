@@ -4,7 +4,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: var(--Black);
+  background: var(--Orange);
   transition: 0.5s;
   display: flex;
   flex-direction: column;
@@ -22,11 +22,13 @@
 .Menu-Contact {
   font-size: var(--Description);
   cursor: pointer;
+  color: var(--White);
 }
 .Menu-Close {
   position: absolute;
   top: 3rem;
   right: 3rem;
   font-size: var(--Icons);
+  color: var(--White);
   cursor: pointer;
 }

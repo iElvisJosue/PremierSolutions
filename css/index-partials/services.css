@@ -1,0 +1,144 @@
+.Services-Main {
+    width: 100%;
+    background: var(--White);
+    height: auto;
+}
+.Services {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "Services-Presentation Services-Presentation"
+        "Services-Construction Services-Construction"
+        "Services-1 Services-1"
+        "Services1-Button-Details Services1-Button-Details"
+        "Services-Industrial Services-Industrial"
+        "Services-2 Services-2"
+        "Services2-Button-Details Services2-Button-Details"
+        "Services-Cleaning Services-Cleaning"
+        "Services-3 Services-3"
+        "Services3-Button-Details Services3-Button-Details"
+        ;
+    padding: 4rem 1.5rem;
+    gap: 1rem;
+}
+.Services-Presentation{
+    grid-area: Services-Presentation;
+    display: flex;
+    flex-direction: column;
+}
+.Services-Title {
+    font-size: var(--Text);
+    color: var(--Black);
+    letter-spacing: var(--Spacing);
+    font-weight: bold;
+}
+.Services-Subtitle{
+    font-size: var(--Description);
+    color: var(--Orange);
+}
+.Services-Construction, .Services-Industrial, .Services-Cleaning{
+    font-size: var(--Text);
+    color: var(--Black);
+    letter-spacing: var(--Spacing);
+    display: flex;
+    padding-top: 4rem;
+    font-weight: bold;
+}
+.Services-Construction{
+    grid-area: Services-Construction;
+}
+.Services-Industrial{
+    grid-area: Services-Industrial;
+}
+.Services-Cleaning{
+    grid-area: Services-Cleaning;
+}
+.Services-List{
+    height: 25rem;
+    /* gap: 2.5rem; */
+    padding: var(--Padding);
+    display: flex;
+    background: var(--Orange);
+}
+.Services-Icons{
+    font-size: calc(var(--Icons) * 3) !important;
+    color: var(--White);
+}
+.Services-List-Name{
+    font-size: var(--Border);
+    text-align: center;
+    color: var(--White);
+}
+.Services-1, .Services-2, .Services-3{
+    display: flex;
+}
+.Services-1-Name, .Services-2-Name, .Services-3-Name{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+    gap: 1rem;
+}
+.Services-1-Details, .Services-2-Details, .Services-3-Details{
+    width: 0;
+    min-height: 25rem;
+    height: auto;
+    color: var(--White);
+    font-size: var(--Border);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.Services1-Button-Details, .Services2-Button-Details, .Services3-Button-Details{
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.Services1-Button-Details{
+    grid-area: Services1-Button-Details;
+}
+.Services2-Button-Details{
+    grid-area: Services2-Button-Details;
+}
+.Services3-Button-Details{
+    grid-area: Services3-Button-Details;
+}
+.Services-1.active .Services-1-Details, .Services-2.active .Services-2-Details, .Services-3.active .Services-3-Details{
+    padding: 1.5rem;
+    min-width: 60%;
+}
+.Services-1.active .Services-1-Name, .Services-2.active .Services-2-Name, .Services-3.active .Services-3-Name{
+    min-width: 40%;
+}
+.Services-1.active, .Services-2.active, .Services-3.active{
+    height: auto;
+}
+.Services-1{
+    grid-area: Services-1;
+}
+.Services-2{
+    grid-area: Services-2;
+}
+.Services-3{
+    grid-area: Services-3;
+}
+.Button-Details{
+    border: none;
+    font-size: var(--Text);
+    padding: 1.5rem 3rem;
+    background: var(--Orange);
+    border: 1px solid var(--Orange);
+    cursor: pointer;
+    transition: .5s all;
+}
+.Button-Details.active{
+    background: var(--White);
+    border: 1px solid var(--Orange);
+    color: var(--Orange);
+}

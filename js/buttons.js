@@ -1,4 +1,3 @@
-const Services3Height = document.querySelector('.Services-3-Details').clientHeight;
 const Services = document.querySelectorAll(".Services-1, .Services-2, .Services-3");
 const ButtonDetails = document.querySelectorAll(".Button-Details");
 var Change = 0;
@@ -36,13 +35,11 @@ ButtonDetails[2].addEventListener("click", () => {
         Services[2].classList.add("active");
         ButtonDetails[2].classList.add("active");
         ButtonDetails[2].innerHTML = "HIDE DETAILS";
-        Services[2].style.height = Services3Height+"px";
         Change3 = 1;
     }else{
         Services[2].classList.remove("active");
         ButtonDetails[2].classList.remove("active");
         ButtonDetails[2].innerHTML = "SEE DETAILS";
-        Services[2].style.height = "250px";
         Change3 = 0;
     }
 })

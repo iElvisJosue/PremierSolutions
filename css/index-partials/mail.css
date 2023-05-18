@@ -1,0 +1,100 @@
+.Mail-Main {
+    width: 100%;
+    height: auto;
+    background: var(--White);
+}
+.Mail{
+    width: 100%;
+    min-height: 50rem;
+    /* height: auto; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "Mail-Intro Mail-Form";
+    padding: 4rem 1.5rem;
+    gap: 1rem;
+}
+.Mail-Intro{
+    grid-area: Mail-Intro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Mail-Title{
+    grid-area: Mail-Intro;
+    font-size: calc(var(--Tittle) - 1.5rem);
+    color: var(--Black);
+}
+.Mail-Subtitle{
+    grid-area: Mail-Form;
+    font-size: var(--Border);
+    padding-top: 2rem;
+    color: var(--Black);
+}
+.Mail-Form{
+    grid-area: Mail-Form;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "Mail-Name Mail-LastName"
+    "Mail-Email Mail-Phone"
+    "Mail-Comment Mail-Comment"
+    "Mail-Send Mail-Send";
+    gap: 2rem;
+}
+.Mail-Inputs{
+    width: 100%;
+    height: 5rem;
+    border: none;
+    outline: none;
+    font-size: var(--Text);
+    border-bottom: 1px solid var(--Black);
+    background: none;
+    color: var(--Black);
+    font-weight: bold;
+}
+.Mail-Inputs::placeholder{
+    color: var(--Black);
+    font-weight: bold;
+}
+.Mail-Name{
+    grid-area: Mail-Name;
+}
+.Mail-LastName{
+    grid-area: Mail-LastName;
+}
+.Mail-Email{
+    grid-area: Mail-Email;
+}
+.Mail-Phone{
+    grid-area: Mail-Phone;
+}
+.Mail-Comment{
+    grid-area: Mail-Comment;
+}
+.Mail-Send{
+    grid-area: Mail-Send;
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.Mail-Button-Send{
+    padding: 1.5rem 3rem;
+    border: none;
+    background: var(--Orange);
+    gap: .5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: .5s all;
+}
+.Mail-Button-Send:hover{
+    background: var(--White);
+    border: 1px solid var(--Orange);
+}
+.Mail-Button-Send p{
+    font-size: var(--Text); 
+}
+.Mail-Button-Send:hover p, .Mail-Button-Send:hover span{
+    color: var(--Orange);
+}

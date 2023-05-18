@@ -7,16 +7,18 @@
   text-align: center;
   gap: 3rem;
   padding: var(--Padding);
+  background: var(--White);
 }
 .Freelance-Tittle {
   font-size: var(--Tittle);
-  color: var(--White);
+  color: red;
+  /* color: var(--White); */
   background: linear-gradient(
     271deg,
-    var(--Orange) 30%,
-    var(--White) 50%,
-    var(--Orange) 70%,
-    var(--White) 94%
+    var(--Black) 30%,
+    var(--Orange) 50%,
+    var(--Black) 70%,
+    var(--Orange) 94%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -24,6 +26,7 @@
 }
 .Freelance-Message {
   font-size: var(--Description);
+  color: var(--Black);
 }
 .Freelance-Contact {
   position: relative;
@@ -39,7 +42,7 @@
   left: 0;
   width: 0;
   height: 1px;
-  background: var(--White);
+  background: var(--Black);
   transition: 0.5s;
 }
 .Freelance-Contact:hover.Freelance-Contact::after {
