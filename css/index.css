@@ -46,6 +46,7 @@ body {
   overflow-x: hidden;
   background: var(--White);
 }
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -67,8 +68,135 @@ body {
   transition: 0.5s;
   z-index: 999;
 }
+.Show-Colors {
+  position: fixed;
+  top: calc(50% - 1.5rem);
+  width: 5rem;
+  height: 5rem;
+  background: var(--Orange);
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+}
+.Palette{
+  font-size: var(--Icons);
+}
+.Menu-Display{
+  position: fixed;
+  transition: .5s all;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, .5);
+  z-index: -1;
+  opacity: 0;
+  /* display: none; */
+}
+.Menu-Display.ShowDisplay{
+  /* display: block; */
+  z-index: 1000;
+  opacity: 1;
+}
+.Menu-Theme{
+  position: absolute;
+  transition: .5s all;
+  padding: 1.5rem;
+  top: calc(50% - 20rem);
+  left: calc(50% - 12.5rem);
+  width: 25rem;
+  height: 40rem;
+  background: var(--White);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 5rem 8.75rem;
+  grid-template-areas: "Title-MenuTheme Title-MenuTheme"
+  "Theme-1 Theme-2"
+  "Theme-3 Theme-4"
+  "Theme-5 Theme-6"
+  "Theme-7 Theme-8";
+}
+.Close-MenuTheme{
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: var(--Icons);
+  cursor: pointer;
+  color: var(--Orange);
+}
+.Title-MenuTheme{
+  grid-area: Title-MenuTheme;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--Description);
+  color: var(--Orange);
+  font-weight: bold;
+}
+.Theme-1, .Theme-2, .Theme-3, .Theme-4, .Theme-5, .Theme-6, .Theme-7, .Theme-8{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Theme-1 span, .Theme-2 span, .Theme-3 span, .Theme-4 span, .Theme-5 span, .Theme-6 span, .Theme-7 span, .Theme-8 span{
+  padding: 2.75rem;
+  border-radius: 50%;
+}
+.Theme-1{
+  grid-area: Theme-1;
+}
+.Theme-1 span{
+  background: #F45050;
+}
+.Theme-2{
+  grid-area: Theme-2;
+}
+.Theme-2 span{
+  background: #19A7CE;
+}
+.Theme-3{
+  grid-area: Theme-3;
+}
+.Theme-3 span{
+  background: #806F21;
+}
+.Theme-4{
+  grid-area: Theme-4;
+}
+.Theme-4 span{
+  background: #654E92;
+}
+.Theme-5{
+  grid-area: Theme-5;
+}
+.Theme-5 span{
+  background: #C25797;
+}
+.Theme-6{
+  grid-area: Theme-6;
+}
+.Theme-6 span{
+  background: #EB6440;
+}
+.Theme-7{
+  grid-area: Theme-7;
+}
+.Theme-7 span{
+  background: #008000;
+}
+.Theme-8{
+  grid-area: Theme-8;
+}
+.Theme-8 span{
+  background: var(--Black2);
+}
 .Icon-Top {
   position: absolute;
+  transition: .5s;
   top: calc(50% - 0.5rem);
   left: calc(50% - 1rem);
   width: 2rem;

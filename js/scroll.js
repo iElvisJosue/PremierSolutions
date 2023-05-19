@@ -1,5 +1,4 @@
 const Welcome = document.querySelectorAll(".Welcome, .Profile, .Work-Tittle, .Work-Presentation, .Wip");
-// const Navbar = document.querySelector(".Navbar");
 const ButtonTop = document.querySelector(".Button-Top");
 
 const Observer = new IntersectionObserver((entradas) => {
