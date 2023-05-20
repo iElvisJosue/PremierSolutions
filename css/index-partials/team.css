@@ -19,7 +19,7 @@
     grid-area: Team-Tittle;
     height: 2.5rem;
     font-size: var(--Text);
-    color: var(--Black);
+    color: var(--White);
     letter-spacing: var(--Spacing);
     font-weight: bold;
 }

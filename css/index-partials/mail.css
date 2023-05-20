@@ -18,7 +18,7 @@
     grid-area: Mail-Intro;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .Mail-Title{
     grid-area: Mail-Intro;

@@ -24,6 +24,23 @@
         <span class="Icon-Top"></span>
     </a>
 
+    <div class="Alert-Success">
+        <span class="material-symbols-outlined MailIcons">
+            mark_email_read
+        </span>
+        <p class="Alert-Text">
+            MAIL SENT SUCCESSFULLY 
+        </p>
+    </div>
+    <div class="Alert-Error">
+        <span class="material-symbols-outlined MailIcons">
+            unsubscribe
+        </span>
+        <p class="Alert-Text">
+            FAILED TO SEND
+        </p>
+    </div>
+    
     <div class="Menu-Display">
         <div class="Menu-Theme">
             <span class="material-symbols-outlined Close-MenuTheme">
@@ -229,26 +246,26 @@
                 <p class="Mail-Title">Let's work together to build something great</p>
                 <p class="Mail-Subtitle">We make Strategy and Innovation. Talk to our Consulting leaders about how we can add value.</p>
             </div>
-            <form action="#" class="Mail-Form">
+            <form class="Mail-Form" id="MailForm">
                 <div class="Mail-Name">
-                    <input type="text" placeholder="Name" maxlength="50" class="Mail-Inputs" required>
+                    <input type="text" placeholder="Name" name="Name" id="Name" maxlength="50" class="Mail-Inputs" required>
                 </div>
                 <div class="Mail-LastName">
-                    <input type="text" placeholder="Last Name" maxlength="50" class="Mail-Inputs" required>
+                    <input type="text" placeholder="Last Name" name="LastName"  id="LastName" maxlength="50" class="Mail-Inputs" required>
                 </div>
                 <div class="Mail-Email">
-                    <input type="email" placeholder="Email" maxlength="70" class="Mail-Inputs" required>
+                    <input type="email" placeholder="Email" name="Email" id="Email" maxlength="70" class="Mail-Inputs" required>
                 </div>
                 <div class="Mail-Phone">
-                    <input type="tel" placeholder="Phone" maxlength="10" class="Mail-Inputs" pattern="[0-9]{10}" title="
+                    <input type="tel" placeholder="Phone" name="Phone" id="Phone" maxlength="10" class="Mail-Inputs" pattern="[0-9]{10}" title="
                     Enter a valid phone number, example: 7441595198" required>
                 </div>
                 <div class="Mail-Comment">
-                    <input type="text" placeholder="Comment" maxlength="250" class="Mail-Inputs" required>
+                    <input type="text" placeholder="Comment" name="Comment" id="Comment" maxlength="250" class="Mail-Inputs" required>
                 </div>
                 <div class="Mail-Send">
-                    <button type="submit" class="Mail-Button-Send">
-                        <p> SEND REQUEST </p>
+                    <button type="submit" id="BtnSubmit" class="Mail-Button-Send">
+                        <p> SEND EMAIL </p>
                         <span class="material-symbols-outlined">
                             arrow_outward
                         </span>
@@ -285,8 +302,10 @@
     <script src="js/buttons.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/theme.js"></script>
+    <script src="js/email.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('ZrAYM9cSi2v1nfatb')</script>
 </body>
 </html>

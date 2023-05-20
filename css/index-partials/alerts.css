@@ -1,0 +1,35 @@
+.Alert-Success, .Alert-Error{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    transition: .5s all;
+    top: 7.5rem;
+    right: -30rem;
+    width: 30rem;
+    height: 7.5rem;
+    z-index: 999;
+    opacity: 0;
+}
+.Alert-Text{
+    font-size: var(--Text);
+    width: 25rem;
+}
+.Alert-Success{
+    background: #008000;
+}
+.Alert-Success.Active{
+    right: 0;
+    opacity: 1;
+}
+.Alert-Error{
+    background: #F45050;
+}
+.Alert-Error.Active{
+    right: 0;
+    opacity: 1;
+}
+.MailIcons{
+    text-align: center;
+    width: 5rem;
+    font-size: var(--Icons) !important;
+}
