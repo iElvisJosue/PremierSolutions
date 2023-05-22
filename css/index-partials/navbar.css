@@ -3,7 +3,8 @@
   top: 0;
   width: 100%;
   height: 6.5rem;
-  background: var(--Orange);
+  /* background: var(--Orange); */
+  background:linear-gradient(45deg, var(--MainColor) 0%, var(--SecundaryColor) 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

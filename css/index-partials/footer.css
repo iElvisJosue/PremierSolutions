@@ -12,11 +12,13 @@
   gap: 5rem;
 }
 .Footer-Icons {
-  color: var(--Orange);
+  /* color: var(--Orange); */
+  color: var(--MainColor);
   font-size: calc(var(--Icons) - 1rem);
   cursor: pointer;
 }
 .Footer-Copyright {
   font-size: var(--Text);
-  color: var(--Orange);
+  /* color: var(--Orange); */
+  color: var(--MainColor);
 }

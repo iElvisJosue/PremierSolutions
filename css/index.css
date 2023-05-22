@@ -1,6 +1,6 @@
 @import url(./index-partials/menu.css);
 @import url(./index-partials/navbar.css);
-@import url(./index-partials/freelance.css);
+@import url(./index-partials/slogan.css);
 @import url(./index-partials/footer.css);
 @import url(./index-partials/welcome.css);
 @import url(./index-partials/services.css);
@@ -11,8 +11,8 @@
 @import url(./index-partials/alerts.css);
 
 :root {
-  --Orange: #008000;
-  --Orange2: #C5420A;
+  --MainColor: #1f6a5a;
+  --SecundaryColor: #30785e;
   --Black: #161717;
   --Black2: #222222;
   --White: #FCFCFC;
@@ -33,6 +33,8 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Raleway", cursive;
+  /* font-family: 'Lato', sans-serif; */
+  /* font-family: 'Montserrat', sans-serif; */
   font-size: 10px;
   color: var(--White);
 }
@@ -65,7 +67,8 @@ body {
   bottom: 2rem;
   width: 5rem;
   height: 5rem;
-  background: var(--Orange);
+  /* background: var(--Orange); */
+  background:linear-gradient(45deg, var(--MainColor) 0%, var(--SecundaryColor) 100%);
   opacity: 0;
   transition: 0.5s;
   z-index: 999;
@@ -90,8 +93,8 @@ body {
   left: calc(50% - 1.5rem);
   width: 3rem;
   height: 3rem;
-  border-right: 3px solid var(--Orange);
-  border-bottom: 3px solid var(--Orange);
+  border-right: 3px solid var(--MainColor);
+  border-bottom: 3px solid var(--MainColor);
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);

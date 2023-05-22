@@ -1,0 +1,49 @@
+.Slogan {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+  padding: var(--Padding);
+  background: var(--White);
+}
+.Slogan-Tittle {
+  font-size: var(--Tittle);
+  background: linear-gradient(
+    271deg,
+    var(--MainColor) 30%,
+    var(--SecundaryColor) 50%,
+    var(--MainColor) 70%,
+    var(--SecundaryColor) 94%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Slogan-Message {
+  font-size: var(--Description);
+  color: var(--Black);
+}
+.Slogan-Contact {
+  position: relative;
+  font-size: var(--Description);
+  font-weight: normal;
+  cursor: pointer;
+  /* color: var(--Orange); */
+  color: var(--MainColor);
+}
+.Slogan-Contact::after {
+  content: "";
+  position: absolute;
+  top: calc(50% + 0.5px);
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--Black);
+  transition: 0.5s;
+}
+.Slogan-Contact:hover.Slogan-Contact::after {
+  width: 100%;
+}

@@ -38,7 +38,8 @@
 }
 .Services-Subtitle{
     font-size: var(--Description);
-    color: var(--Orange);
+    /* color: var(--Orange); */
+    color: var(--MainColor);
 }
 .Services-Construction, .Services-Industrial, .Services-Cleaning{
     font-size: var(--Text);
@@ -62,7 +63,8 @@
     /* gap: 2.5rem; */
     padding: var(--Padding);
     display: flex;
-    background: var(--Orange);
+    /* background: var(--Orange); */
+    background:linear-gradient(45deg, var(--MainColor) 0%, var(--SecundaryColor) 100%);
 }
 .Services-Icons{
     font-size: calc(var(--Icons) * 3) !important;
@@ -132,13 +134,17 @@
     border: none;
     font-size: var(--Text);
     padding: 1.5rem 3rem;
-    background: var(--Orange);
-    border: 1px solid var(--Orange);
+    /* background: var(--Orange); */
+    background:linear-gradient(45deg, var(--MainColor) 0%, var(--SecundaryColor) 100%);
+    /* border: 1px solid var(--Orange); */
+    border: 1px solid var(--MainColor);
     cursor: pointer;
     transition: .5s all;
 }
-.Button-Details.active{
+.Button-Details.active, .Button-Details:hover{
     background: var(--White);
-    border: 1px solid var(--Orange);
-    color: var(--Orange);
+    /* border: 1px solid var(--Orange); */
+    border: 1px solid var(--MainColor);
+    /* color: var(--Orange); */
+    color: var(--MainColor);
 }

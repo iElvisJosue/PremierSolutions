@@ -1,7 +1,8 @@
 .Team-Main {
     width: 100%;
     height: auto;
-    background: var(--Orange);
+    /* background: var(--Orange); */
+    background:linear-gradient(45deg, var(--MainColor) 0%, var(--SecundaryColor) 100%);
 }
 .Team {
     position: relative;
@@ -24,6 +25,7 @@
     font-weight: bold;
 }
 .Team-Member{
+    position: relative;
     height: 47.5rem auto;
     background: var(--White);
     display: grid;
@@ -32,9 +34,14 @@
     "Team-Rol Team-Networks";
     padding: 3rem 1.5rem;
     gap: 1rem;
+    transition: .5s all;
 }
 .Member-1{
     grid-area: Member-1;
+}
+.Team-Member:hover{
+    position: relative;
+    transform: translate(-.7rem, -.7rem);
 } 
 .Member-2{
     grid-area: Member-2;
@@ -58,16 +65,15 @@
 .Team-Rol{
     grid-area: Team-Rol;
     height: auto;
-    color: var(--Orange);
 }
 .Member-Name{
     font-size: calc(var(--Text) + .7rem);
     padding-bottom: 1rem;
-    color: var(--Orange);
+    color: var(--MainColor);
 }
 .Member-Rol{
-    color: var(--Orange);
     font-size: var(--Text);
+    color: var(--MainColor);
 }
 .Team-Networks{
     grid-area: Team-Networks;
@@ -80,16 +86,20 @@
     font-size: calc(var(--Icons) - .5rem);
     padding: 1rem;
     border-radius: 50%;
+    cursor: pointer;
+    /* background: var(--Orange); */
+    background:linear-gradient(45deg, var(--MainColor) 0%, var(--SecundaryColor) 100%);
+    transition: .5s all;
 }
-.Member-Phone{
-    background: var(--Orange);
+.Member-Phone:hover{
+    background: linear-gradient(45deg, #1bd741, #32a733);
 }
-.Member-At{
-    background: var(--Orange);
+.Member-At:hover{
+    background: linear-gradient(45deg, #ffbd07, #a87e1a);
 }
-.Member-Linkedin{
-    background: var(--Orange);
+.Member-Linkedin:hover{
+    background: linear-gradient(45deg, #83b4e3, #0a66c2);
 }
-.Member-Instagram{
-    background: var(--Orange);
+.Member-Instagram:hover{
+    background: linear-gradient(45deg, #ffc451, #b231ba);
 }

@@ -15,14 +15,14 @@
     width: 25rem;
 }
 .Alert-Success{
-    background: #008000;
+    background:linear-gradient(45deg, var(--MainColor) 0%, var(--SecundaryColor) 100%);
 }
 .Alert-Success.Active{
     right: 0;
     opacity: 1;
 }
 .Alert-Error{
-    background: #F45050;
+    background:linear-gradient(45deg, var(--MainColor) 0%, var(--SecundaryColor) 100%);
 }
 .Alert-Error.Active{
     right: 0;

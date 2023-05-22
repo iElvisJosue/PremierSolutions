@@ -16,10 +16,11 @@
     gap: 2.5rem;
     padding: var(--Padding);
     text-align: center;
+    overflow: hidden;
 }
 .Welcome-PremierSolutions {
     font-size: var(--Text);
-    color: var(--Orange);
+    color: var(--Black);
     letter-spacing: var(--Spacing);
     text-transform: uppercase;
     font-weight: bold;
@@ -27,7 +28,7 @@
 .Welcome-Name {
     font-size: var(--Tittle);
     text-transform: uppercase;
-    color: var(--Black);
+    color: var(--MainColor);
 }
 .Welcome-Presentation {
     font-size: var(--Text);

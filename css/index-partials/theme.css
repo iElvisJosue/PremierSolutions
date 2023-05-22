@@ -3,7 +3,8 @@
     top: calc(50% - 1.5rem);
     width: 5rem;
     height: 5rem;
-    background: var(--Orange);
+    /* background: var(--Orange); */
+    background:linear-gradient(45deg, var(--MainColor) 0%, var(--SecundaryColor) 100%);
     transition: 0.5s;
     display: flex;
     align-items: center;
@@ -53,7 +54,8 @@
     right: 1.5rem;
     font-size: var(--Icons);
     cursor: pointer;
-    color: var(--Orange);
+    /* color: var(--Orange); */
+    color: var(--MainColor);
 }
 .Title-MenuTheme{
     grid-area: Title-MenuTheme;
@@ -61,7 +63,8 @@
     align-items: center;
     justify-content: center;
     font-size: var(--Description);
-    color: var(--Orange);
+    /* color: var(--Orange); */
+    color: var(--MainColor);
     font-weight: bold;
 }
 .Theme-1, .Theme-2, .Theme-3, .Theme-4, .Theme-5, .Theme-6, .Theme-7, .Theme-8{
@@ -78,47 +81,47 @@
     grid-area: Theme-1;
 }
 .Theme-1 span{
-    background: #F45050;
+    background:linear-gradient(45deg, #667eea 0%, #764ba2 100%);
 }
 .Theme-2{
     grid-area: Theme-2;
 }
 .Theme-2 span{
-    background: #19A7CE;
+    background:linear-gradient(45deg, #b062d2 0%, #ee609c 100%);
 }
 .Theme-3{
     grid-area: Theme-3;
 }
 .Theme-3 span{
-    background: #806F21;
+    background:linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
 }
 .Theme-4{
     grid-area: Theme-4;
 }
 .Theme-4 span{
-    background: #654E92;
+    background:linear-gradient(45deg, #f43b47 0%, #453a94 100%);
 }
 .Theme-5{
     grid-area: Theme-5;
 }
 .Theme-5 span{
-    background: #C25797;
+    background:linear-gradient(45deg, #f83600 0%, #ec8c69 100%);
 }
 .Theme-6{
     grid-area: Theme-6;
 }
 .Theme-6 span{
-    background: #EB6440;
+    background:linear-gradient(45deg, #1f6a5a 0%, #3b8060 100%);
 }
 .Theme-7{
     grid-area: Theme-7;
 }
 .Theme-7 span{
-    background: #008000;
+    background:linear-gradient(45deg, #4e36bd 0%, #2768d5 100%);
 }
 .Theme-8{
     grid-area: Theme-8;
 }
 .Theme-8 span{
-    background: var(--Black2);
+    background:linear-gradient(45deg, #23263a 0%, #27555b 100%);
 }
