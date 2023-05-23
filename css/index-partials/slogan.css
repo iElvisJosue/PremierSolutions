@@ -47,3 +47,22 @@
 .Slogan-Contact:hover.Slogan-Contact::after {
   width: 100%;
 }
+.Slogan-Tittle, .Slogan-Message{
+  position: relative;
+  left: -10rem;
+  opacity: 0;
+}
+.Slogan.Active .Slogan-Tittle, .Slogan.Active .Slogan-Message{
+  animation: Mail;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.Slogan.Active .Slogan-Message{
+  animation-delay: .33s;
+}
+@keyframes Slogan {
+  100%{
+      left: 0;
+      opacity: 1;
+  }
+}

@@ -18,6 +18,14 @@
     text-align: center;
     overflow: hidden;
 }
+.Welcome-PremierSolutions, .Welcome-Name, .Welcome-Presentation{
+    position: relative;
+    animation: Welcome;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    left: -100rem;
+    opacity: 0;
+}
 .Welcome-PremierSolutions {
     font-size: var(--Text);
     color: var(--Black);
@@ -29,9 +37,17 @@
     font-size: var(--Tittle);
     text-transform: uppercase;
     color: var(--MainColor);
+    animation-delay: .33s;
 }
 .Welcome-Presentation {
     font-size: var(--Text);
     letter-spacing: var(--Spacing);
     color: var(--Black);
+    animation-delay: .66s;
+}
+@keyframes Welcome {
+    100%{
+        left: 0;
+        opacity: 1;
+    }
 }

@@ -113,3 +113,29 @@
         rotate: 360deg;
     }
 }
+.Mail-Main.Active .Mail-Title, .Mail-Main.Active .Mail-Subtitle, .Mail-Main.Active .Mail-Form,
+.Mail-Main.Active .Mail-Button-Send{
+    animation: Mail;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.Mail-Title, .Mail-Subtitle, .Mail-Form, .Mail-Button-Send{
+    position: relative;
+    left: -10rem;
+    opacity: 0;
+}
+.Mail-Main.Active .Mail-Subtitle{
+    animation-delay: .33s;
+}
+.Mail-Main.Active .Mail-Form{
+    animation-delay: .66s;
+}
+.Mail-Main.Active .Mail-Button-Send{
+    animation-delay: .99s;
+}
+@keyframes Mail {
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}

@@ -1,7 +1,11 @@
 .Footer {
   width: 100%;
   height: 150px;
-  background: var(--White);
+  background:linear-gradient(45deg, var(--MainColor) 0%, var(--SecundaryColor) 100%);
+}
+.Footer-Content{
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,12 +17,12 @@
 }
 .Footer-Icons {
   /* color: var(--Orange); */
-  color: var(--MainColor);
+  color: var(--White);
   font-size: calc(var(--Icons) - 1rem);
   cursor: pointer;
 }
 .Footer-Copyright {
   font-size: var(--Text);
   /* color: var(--Orange); */
-  color: var(--MainColor);
+  color: var(--White);
 }

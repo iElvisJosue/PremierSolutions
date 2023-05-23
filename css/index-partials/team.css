@@ -103,3 +103,28 @@
 .Member-Instagram:hover{
     background: linear-gradient(45deg, #ffc451, #b231ba);
 }
+.Team-Tittle, .Member-1, .Member-2, .Member-3{
+    position: relative;
+    left: -10rem;
+    opacity: 0;
+}
+.Team-Main.Active .Team-Tittle, .Team-Main.Active .Member-1, .Team-Main.Active .Member-2, .Team-Main.Active .Member-3{
+    animation: Team;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.Team-Main.Active .Member-1{
+    animation-delay: .33s;
+}
+.Team-Main.Active .Member-2{
+    animation-delay: .66s;
+}
+.Team-Main.Active .Member-3{
+    animation-delay: .99s;
+}
+@keyframes Team {
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}

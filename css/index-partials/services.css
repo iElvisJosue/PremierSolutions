@@ -30,6 +30,11 @@
     display: flex;
     flex-direction: column;
 }
+.Services-Title, .Services-Subtitle, .Services-Construction, .Services-Industrial, .Services-Cleaning{
+    position: relative;
+    left: -10rem;
+    opacity: 0;
+}
 .Services-Title {
     font-size: var(--Text);
     color: var(--Black);
@@ -75,8 +80,11 @@
     text-align: center;
     color: var(--White);
 }
-.Services-1, .Services-2, .Services-3{
+.Services-1, .Services-2, .Services-3, .Button-Details{
     display: flex;
+    position: relative;
+    left: -10rem;
+    opacity: 0;
 }
 .Services-1-Name, .Services-2-Name, .Services-3-Name{
     min-width: 100%;
@@ -139,7 +147,6 @@
     /* border: 1px solid var(--Orange); */
     border: 1px solid var(--MainColor);
     cursor: pointer;
-    transition: .5s all;
 }
 .Button-Details.active, .Button-Details:hover{
     background: var(--White);
@@ -147,4 +154,29 @@
     border: 1px solid var(--MainColor);
     /* color: var(--Orange); */
     color: var(--MainColor);
+}
+.Services-Main.Active .Services-Title, .Services-Main.Active .Services-Subtitle, .Services-Main.Active .Services-Construction, 
+.Services-Main.Active .Services-Cleaning, .Services-Main.Active .Services-Industrial, .Services-Main.Active .Services-1,
+.Services-Main.Active .Services-2, .Services-Main.Active .Services-3, .Services-Main.Active .Button-Details{
+    animation: Services;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.Services-Main.Active .Services-Construction, .Services-Main.Active .Services-1{
+    animation-delay: .33s;
+}
+.Services-Main.Active .Services-Industrial, .Services-Main.Active .Services-2{
+    animation-delay: .66s;
+}
+.Services-Main.Active .Services-Cleaning, .Services-Main.Active .Services-3{
+    animation-delay: .99s;
+}
+.Services-Main.Active .Button-Details{
+    animation-delay: 1s;
+}
+@keyframes Services {
+    100%{
+        left: 0;
+        opacity: 1;
+    }
 }

@@ -3,13 +3,13 @@
   .Services,
   .Team,
   .Mail,
-  .Footer {
+  .Footer-Content {
     width: 1150px;
     margin: 0 auto;
   }
 }
 @media (max-width: 1200px) {
-  .Footer {
+  .Footer-Content {
     justify-content: center;
     flex-direction: column;
     gap: 3rem;

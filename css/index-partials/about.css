@@ -4,6 +4,11 @@
     /* background: var(--Orange); */
     background:linear-gradient(45deg, var(--MainColor) 0%, var(--SecundaryColor) 100%);
 }
+.AboutUs-Main.Active .AboutUs-Title, .AboutUs-Main.Active .AboutUs-Text{
+    animation: AboutUs;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
 .AboutUs {
     position: relative;
     width: 100%;
@@ -25,6 +30,11 @@
     gap: 5rem;
     padding: var(--Padding);
 }
+.AboutUs-Title, .AboutUs-Text{
+    position: relative;
+    left: -10rem;
+    opacity: 0;
+}
 .AboutUs-Title {
     font-size: var(--Text);
     color: var(--White);
@@ -34,4 +44,13 @@
 .AboutUs-Text {
     color: var(--White);
     font-size: var(--Description);
+}
+.AboutUs-Main.Active .AboutUs-Text{
+    animation-delay: .5s;
+}
+@keyframes AboutUs {
+    100%{
+        left: 0;
+        opacity: 1;
+    }
 }
