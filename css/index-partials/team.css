@@ -18,11 +18,12 @@
 }
 .Team-Tittle {
     grid-area: Team-Tittle;
-    height: 2.5rem;
     font-size: var(--Text);
     color: var(--White);
     letter-spacing: var(--Spacing);
     font-weight: bold;
+    border-left: .5rem solid var(--White);
+    padding: 1rem;
 }
 .Team-Member{
     position: relative;

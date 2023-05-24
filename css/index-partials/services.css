@@ -40,11 +40,15 @@
     color: var(--Black);
     letter-spacing: var(--Spacing);
     font-weight: bold;
+    border-left: .5rem solid var(--Black);
+    padding: 1rem;
 }
 .Services-Subtitle{
     font-size: var(--Description);
     /* color: var(--Orange); */
-    color: var(--MainColor);
+    color: var(--Black);
+    border-left: .5rem solid var(--Black);
+    padding: 1rem;
 }
 .Services-Construction, .Services-Industrial, .Services-Cleaning{
     font-size: var(--Text);

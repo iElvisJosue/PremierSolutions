@@ -16,9 +16,6 @@
   }
 }
 @media (max-width: 992px) {
-  .Team-Tittle {
-    height: 1.5rem;
-  }
   .Team-Picture{
     height: 20rem;
   }
@@ -120,6 +117,9 @@
     "Mail-Phone"
     "Mail-Comment"
     "Mail-Send";
+  }
+  .Welcome span{
+    opacity: 0 !important;
   }
 }
 @media (max-width: 420px) {
