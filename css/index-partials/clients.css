@@ -1,0 +1,98 @@
+.Clients-Main{
+    width: 100%;
+    min-height: 25rem;
+    height: auto;
+    background:linear-gradient(45deg, var(--MainColor) 0%, var(--SecundaryColor) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Clients{
+    width: 100%;
+    min-height: 25rem;
+    padding: 5rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: "Clients-Tittle Clients-Tittle Clients-Tittle"
+    "Review-1 Review-2 Review-3";
+    gap: 2rem;
+}
+.Clients-Tittle{
+    grid-area: Clients-Tittle;
+    height: auto;
+    padding: 1.5rem;
+    font-size: var(--Text);
+    letter-spacing: var(--Spacing);
+    font-weight: bold;
+    border-left: .5rem solid var(--White);
+}
+.Clients-Reviews{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.5rem;
+    background: var(--White);
+}
+.Review-1{
+    grid-area: Review-1;
+}
+.Review-2{
+    grid-area: Review-2;
+}
+.Review-3{
+    grid-area: Review-3;
+}
+.Review-Tittle{
+    width: 100%;
+}
+.Review-Name{
+    color: var(--MainColor);
+    font-weight: bold;
+    font-size: calc(var(--Text) + .7rem);
+}
+.Review-Corporation{
+    padding-top: .5rem;
+    font-size: var(--Text);
+    color: var(--MainColor);
+}
+.Review-Content{
+    width: 100%;
+}
+.Review-Message{
+    font-size: var(--Text);
+    color: var(--MainColor);
+}
+.Review-Rate{
+    width: 100%;
+}
+.Review-Rate ion-icon{
+    font-size: var(--Icons);
+    color: var(--MainColor);
+}
+.Clients-Tittle, .Clients-Reviews{
+    position: relative;
+    left: -10rem;
+    opacity: 0;
+}
+.Clients-Main.Active .Clients-Tittle, .Clients-Main.Active .Clients-Reviews{
+    animation: Review;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.Clients-Main.Active .Review-1{
+    animation-delay: .33s;
+}
+.Clients-Main.Active .Review-2{
+    animation-delay: .66s;
+}
+.Clients-Main.Active .Review-3{
+    animation-delay: .99s;
+}
+@keyframes Review {
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}

@@ -53,7 +53,7 @@
   opacity: 0;
 }
 .Slogan.Active .Slogan-Tittle, .Slogan.Active .Slogan-Message{
-  animation: Mail;
+  animation: Slogan;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }

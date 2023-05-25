@@ -4,7 +4,9 @@ const AboutUsMain = document.querySelectorAll(".AboutUs-Main");
 const ServicesMain = document.querySelectorAll(".Services-Test, .Services-List");
 const TeamMain = document.querySelectorAll(".Team-Test, .Team-Member");
 const MailMain = document.querySelectorAll(".Mail-Main");
-const ObserverElements = document.querySelectorAll(".AboutUs-Main, .Services-Main, .Team-Main, .Mail-Main, .Slogan");
+const ClientsMain = document.querySelectorAll(".Clients-Main");
+const Slogan = document.querySelectorAll(".Slogan");
+const ObserverElements = document.querySelectorAll(".AboutUs-Main, .Services-Main, .Team-Main, .Mail-Main, .Clients-Main, .Slogan");
 
 const ObserverWelcome = new IntersectionObserver((EntradasWelcome) => {
     EntradasWelcome.forEach(EntradaWelcome => {
@@ -52,7 +54,26 @@ const ObserverMailMain = new IntersectionObserver((EntradasMailMain) => {
     EntradasMailMain.forEach(EntradaMailMain => {
         if(EntradaMailMain.isIntersecting){
             ObserverElements[3].classList.add("Active");
+        }
+    })
+},{
+    threshold: .7,
+    rootMargin: '0px'
+});
+const ObserverClientsMain = new IntersectionObserver((EntradasClientsMain) => {
+    EntradasClientsMain.forEach(EntradaClientsMain => {
+        if(EntradaClientsMain.isIntersecting){
             ObserverElements[4].classList.add("Active");
+        }
+    })
+},{
+    threshold: .7,
+    rootMargin: '0px'
+});
+const ObserverSlogan = new IntersectionObserver((EntradasSlogan) => {
+    EntradasSlogan.forEach(EntradaSlogan => {
+        if(EntradaSlogan.isIntersecting){
+            ObserverElements[5].classList.add("Active");
         }
     })
 },{
@@ -73,4 +94,10 @@ TeamMain.forEach(TeamMainObservado => {
 })
 MailMain.forEach(MailMainObservado => {
     ObserverMailMain.observe(MailMainObservado);
+})
+ClientsMain.forEach(ClientsMainObservado => {
+    ObserverClientsMain.observe(ClientsMainObservado);
+})
+Slogan.forEach(SloganObservado => {
+    ObserverSlogan.observe(SloganObservado);
 })

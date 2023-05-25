@@ -3,7 +3,8 @@
   .Services,
   .Team,
   .Mail,
-  .Footer-Content {
+  .Footer-Content,
+  .Clients {
     width: 1150px;
     margin: 0 auto;
   }
@@ -121,6 +122,13 @@
   .Welcome span{
     opacity: 0 !important;
   }
+  .Clients{
+    grid-template-areas: "Clients-Tittle Clients-Tittle Clients-Tittle"
+    "Review-1 Review-1 Review-1"
+    "Review-2 Review-2 Review-2"
+    "Review-3 Review-3 Review-3";
+    gap: 2rem;
+}
 }
 @media (max-width: 420px) {
   :root {

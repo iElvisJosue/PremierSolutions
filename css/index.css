@@ -9,6 +9,7 @@
 @import url(./index-partials/mail.css);
 @import url(./index-partials/theme.css);
 @import url(./index-partials/alerts.css);
+@import url(./index-partials/clients.css);
 
 :root {
   --MainColor: #1f6a5a;

@@ -76,6 +76,7 @@
     grid-area: Mail-Send;
     height: 5rem;
     display: flex;
+    align-items: flex-end;
     justify-content: flex-end;
 }
 .Mail-Button-Send{

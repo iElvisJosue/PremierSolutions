@@ -40,7 +40,7 @@
     color: var(--Black);
     letter-spacing: var(--Spacing);
     font-weight: bold;
-    border-left: .5rem solid var(--Black);
+    border-left: .5rem solid var(--Black2);
     padding: 1rem;
 }
 .Services-Subtitle{
